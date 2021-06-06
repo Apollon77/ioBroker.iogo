@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "iogo",
-        "version": "0.6.6",
+        "version": "0.7.0",
         "news": {
+            "0.7.0": {
+                "en": "Added support of Admin5",
+                "de": "Unterstützung von Admin5 hinzugefügt",
+                "ru": "Добавлена поддержка Admin5",
+                "pt": "Adicionado suporte de Admin5",
+                "nl": "Ondersteuning toegevoegd voor Admin5",
+                "fr": "Ajout de la prise en charge d'Admin5",
+                "it": "Aggiunto supporto di Admin5",
+                "es": "Soporte agregado de Admin5",
+                "pl": "Dodano obsługę Admin5",
+                "zh-cn": "增加了对Admin5的支持"
+            },
             "0.6.6": {
                 "en": "Bugfix systemLang in MessageService",
                 "de": "Bugfix systemLang in MessageService"
@@ -22,50 +34,9 @@
             "0.5.9": {
                 "en": "Improve sync of object changes",
                 "de": "Synchronisieren von Objekten verbessert"
-            },
-	        "0.5.x": {
-                "en": "Added support of geofence feature",
-                "de": "Unterstützung von Geofence"
-            },
-            "0.4.x": {
-                "en": "Changes for ioGo app version 2.0.0+",
-                "de": "Anpassungen für app Version 2.0.0+"
-            },
-            "0.3.x": {
-                "en": "added support of compact mode",
-                "de": "Unterstützung für Kompaktmodus hinzugefügt",
-                "ru": "перейти в компактный режим",
-                "pt": "mudar para o modo compacto",
-                "nl": "verander naar compacte modus",
-                "fr": "passer en mode compact",
-                "it": "passare alla modalità compatta",
-                "es": "cambiar al modo compacto",
-                "pl": "przejdź do trybu kompaktowego"
-            },
-            "0.2.x": {
-                "en": "added pro features",
-                "de": "pro features hinzugefügt",
-                "ru": "добавлены функции pro",
-                "pt": "recursos pro adicionados",
-                "nl": "toegevoegde professionele functies",
-                "fr": "ajout de fonctionnalités professionnelles",
-                "it": "aggiunte funzionalità professionali",
-                "es": "características pro añadidas",
-                "pl": "dodano funkcje pro"
-            },
-            "0.1.2": {
-                "en": "initial version",
-                "de": "erste Version",
-                "ru": "Первоначальная версия",
-                "pt": "versão inicial",
-                "nl": "eerste versie",
-                "fr": "version initiale",
-                "it": "versione iniziale",
-                "es": "versión inicial",
-                "pl": "początkowa wersja"
             }
         },
-		"title": "ioGo - smarthome to go",
+        "title": "ioGo - smarthome to go",
         "titleLang": {
             "en": "ioGo - smarthome to go",
             "de": "ioGo - smarthome to go",
@@ -98,7 +69,11 @@
         "compact": true,
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/nisiode/ioBroker.iogo/master/admin/iogo.png",
-        "keywords": ["iogo", "android", "app"],
+        "keywords": [
+            "iogo",
+            "android",
+            "app"
+        ],
         "readme": "https://github.com/nisiode/ioBroker.iogo/blob/master/README.md",
         "loglevel": "info",
         "type": "visualization",
@@ -107,14 +82,21 @@
         "supportCustoms": true,
         "restartAdapters": [],
         "connectionType": "cloud",
-        "dataSource": "push"
+        "dataSource": "push",
+        "adminUI": {
+            "config": "json",
+            "custom": "json"
+        }
     },
+    "protectedNative": [
+        "email",
+        "password"
+    ],
     "native": {
         "email": "",
         "password": ""
     },
-    "objects": [
-    ],
+    "objects": [],
     "instanceObjects": [
         {
             "_id": "info.connection",
